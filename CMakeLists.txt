@@ -19,4 +19,7 @@ link_directories(
 
 add_executable(PathfinderVisual main.cpp
         Header/grid.h
-        Include/grid.cpp)
+        Include/grid.cpp
+        Include/Node.cpp)
+
+target_link_libraries(PathfinderVisual PRIVATE sfml-graphics sfml-window sfml-system)
